@@ -1,14 +1,17 @@
-package com.clicklabs.makeapi;
+package com.clicklabs.makeapi.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.widget.Toast;
+
+import com.clicklabs.makeapi.Api;
+import com.clicklabs.makeapi.adapter.CountryListAdapter;
+import com.clicklabs.makeapi.CountryModel;
+import com.clicklabs.makeapi.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -16,7 +19,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class CountryList extends AppCompatActivity {
+public class CountryListActivity extends AppCompatActivity {
 
     private RecyclerView rvCountryList;
     private ArrayList<CountryModel> mCountryList;

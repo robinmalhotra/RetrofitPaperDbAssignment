@@ -1,9 +1,11 @@
-package com.clicklabs.makeapi;
+package com.clicklabs.makeapi.activity;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.clicklabs.makeapi.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -17,7 +19,7 @@ public class SplashActivity extends AppCompatActivity {
     new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent startApp = new Intent(SplashActivity.this, CountryList.class);
+                Intent startApp = new Intent(SplashActivity.this, CountryListActivity.class);
                 startActivity(startApp);
                 finish();
             }
